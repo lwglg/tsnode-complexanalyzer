@@ -1,5 +1,7 @@
 # tsnode-complexanalyzer
 
+![QA result](https://github.com/lwglg/tsnode-complexanalyzer/actions/workflows/ci.yml/badge.svg)
+
 Empirical analysis of asymptotic **time** and **space** complexity for algorithms in TypeScript / Node.js.
 
 Modernization of the 2022 [`empirical-tc-ts`](https://github.com/guligon90/empirical-tc-ts) project.
