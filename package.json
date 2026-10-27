@@ -1,0 +1,56 @@
+{
+  "name": "tsnode-complexanalyzer",
+  "version": "1.0.0",
+  "description": "Modern empirical analysis of asymptotic time and space complexity of algorithms in TypeScript/Node.js",
+  "type": "module",
+  "main": "dist/index.js",
+  "packageManager": "pnpm@12.15.0",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsx src/index.ts",
+    "dev": "tsx watch src/index.ts",
+    "analyze": "tsx src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "check": "pnpm typecheck && pnpm lint && pnpm format:check && pnpm test:coverage",
+    "viz": "tsx src/plot-cli.ts",
+    "plot": "tsx src/plot-cli.ts"
+  },
+  "keywords": [
+    "time-complexity",
+    "space-complexity",
+    "big-o",
+    "empirical-analysis",
+    "asymptotic-analysis",
+    "algorithm-analysis",
+    "typescript"
+  ],
+  "author": "Based on original work by guligon90 (2022), modernized 2026",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=12"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@types/node": "^22.10.0",
+    "@vitest/coverage-v8": "^2.1.8",
+    "eslint": "^9.17.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "prettier": "^3.4.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.18.0",
+    "vitest": "^2.1.8"
+  },
+  "dependencies": {
+    "nodeplotlib": "^1.1.2"
+  }
+}
